@@ -1,0 +1,30 @@
+write demo.sh echo "====================================="
+write -a demo.sh echo "   VFS PRESENTATION DEMO"
+write -a demo.sh echo "====================================="
+write -a demo.sh echo ""
+write -a demo.sh echo "[1] Let's look at the raw disk space (Hexdump)"
+write -a demo.sh hexdump 256
+write -a demo.sh echo ""
+write -a demo.sh echo "[2] Let's look at internal memory (Debug Info)"
+write -a demo.sh debug
+write -a demo.sh echo ""
+write -a demo.sh echo "[3] Let's create some files and folders"
+write -a demo.sh mkdir os_project
+write -a demo.sh cd os_project
+write -a demo.sh write hello.txt "Hello Teacher, this is my OS project!"
+write -a demo.sh stat hello.txt
+write -a demo.sh mkdir nested_folder
+write -a demo.sh cd nested_folder
+write -a demo.sh touch empty.file
+write -a demo.sh cd /
+write -a demo.sh echo ""
+write -a demo.sh echo "[4] Let's view the visual file tree!"
+write -a demo.sh tree
+write -a demo.sh echo ""
+write -a demo.sh echo "[5] Let's view the background memory state again to see what changed!"
+write -a demo.sh debug
+write -a demo.sh hexdump 256
+write -a demo.sh echo "====================================="
+write -a demo.sh echo "   DEMO FINISHED!"
+write -a demo.sh echo "====================================="
+exit
