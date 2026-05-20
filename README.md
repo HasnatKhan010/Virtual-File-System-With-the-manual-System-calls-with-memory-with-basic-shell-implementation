@@ -1,25 +1,13 @@
 # Virtual File System Project
 
-A small educational virtual file system built in C for an operating systems project. It includes a kernel-style VFS implementation, a shell-based command interface, and optional Python-based tooling for testing and visualization.
+A small educational virtual file system built in C for an operating systems project. It includes the core VFS logic and a shell-based command interface.
 
-## Features
+## Main Files
 
-- Persistent filesystem stored in a single binary file
-- File and directory operations such as create, open, read, write, mkdir, ls, rm, and rename
-- Shell interface for interactive use
-- Optional Python UI and automated logic tests
-
-## Project Structure
-
-- `vfs.h` - data structures and function declarations
-- `vfs.c` - core VFS logic
+- `vfs.h` - data structures and declarations
+- `vfs.c` - core VFS implementation
 - `shell.c` - command-line interface
-- `vfs_ui.py` - optional Python UI
-- `test_vfs_logic.py` - logic tests
 - `Makefile` - build instructions
-- `import_demo.txt` - sample import data
-- `PART_1_VFS_H_FOUNDATION.md`, `PART_2_VFS_C_KERNEL.md`, `PART_3_SHELL_C_UI.md` - project notes
-- `extra_docs/` - overview and DFD documentation
 
 ## Build
 
@@ -41,24 +29,17 @@ On Windows:
 vfs.exe
 ```
 
-## Files To Push
+## Push These Files
 
-Push the source and documentation files only:
+For the GitHub repository, push only the main project files and this README:
 
 - `vfs.c`
 - `vfs.h`
 - `shell.c`
-- `vfs_ui.py`
-- `test_vfs_logic.py`
 - `Makefile`
-- `import_demo.txt`
 - `README.md`
-- `PART_1_VFS_H_FOUNDATION.md`
-- `PART_2_VFS_C_KERNEL.md`
-- `PART_3_SHELL_C_UI.md`
-- `extra_docs/`
 
-Do not push generated files:
+Do not push generated files such as:
 
 - `vfs.o`
 - `shell.o`
