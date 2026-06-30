@@ -243,26 +243,6 @@ These files are created while building or running the project and should not be 
 - `vfs.exe`
 - `filesystem.bin`
 
-## Files To Push On GitHub
-
-Push only the main project files and the README:
-
-- `vfs.c`
-- `vfs.h`
-- `shell.c`
-- `vfs_ui.py`
-- `test_vfs_logic.py`
-- `Makefile`
-- `import_demo.txt`
-- `README.md`
-
-If you want a smaller repository, you can keep only the core source files:
-
-- `vfs.c`
-- `vfs.h`
-- `shell.c`
-- `Makefile`
-- `README.md`
 
 ## Notes
 
