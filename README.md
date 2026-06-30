@@ -234,15 +234,6 @@ This script checks basic shell behavior such as:
 - `mkdir` command
 - updated tree output after changes
 
-## Generated Files
-
-These files are created while building or running the project and should not be pushed to GitHub:
-
-- `vfs.o`
-- `shell.o`
-- `vfs.exe`
-- `filesystem.bin`
-
 
 ## Notes
 
